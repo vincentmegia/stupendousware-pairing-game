@@ -1,3 +1,3 @@
-[submodule "stupendousware-core"]
-	path = stupendousware-core
+[submodule "packages/stupendousware-core"]
+	path = packages/stupendousware-core
 	url = https://github.com/vincentmegia/stupendousware-core.git

@@ -1,4 +1,7 @@
+.vscode
+yarn-error.log
 **/.gradle
 **/node_modules
 **/Pods
 **/.DS_Store
+**/build
