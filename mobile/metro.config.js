@@ -1,11 +1,8 @@
 const path = require("path")
 const exclusionList = require("metro-config/src/defaults/exclusionList")
 
-// const moduleRoot = path.resolve(__dirname)
 const moduleRoot = path.resolve(__dirname, "..")
 const packages = `${moduleRoot}/packages`
-console.log("--------------------moduleRoot path: ", moduleRoot)
-console.log("--------------------packages path: ", packages)
 
 module.exports = {
    projectRoot: moduleRoot,
