@@ -292,8 +292,6 @@ PODS:
   - RNScreens (3.16.0):
     - React-Core
     - React-RCTImage
-  - stupendousware-core (0.1.0):
-    - React-Core
   - Yoga (1.14.0)
 
 DEPENDENCIES:
@@ -331,7 +329,6 @@ DEPENDENCIES:
   - React-runtimeexecutor (from `../node_modules/react-native/ReactCommon/runtimeexecutor`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
   - RNScreens (from `../node_modules/react-native-screens`)
-  - stupendousware-core (from `../../packages/stupendousware-core`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -403,8 +400,6 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon"
   RNScreens:
     :path: "../node_modules/react-native-screens"
-  stupendousware-core:
-    :path: "../../packages/stupendousware-core"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -442,7 +437,6 @@ SPEC CHECKSUMS:
   React-runtimeexecutor: b960b687d2dfef0d3761fbb187e01812ebab8b23
   ReactCommon: 095366164a276d91ea704ce53cb03825c487a3f2
   RNScreens: ee31ecdf23fe81e93c74feaa086cf173d758ab58
-  stupendousware-core: 959a0b2d1837cc8256002da93174104fcdeaa742
   Yoga: 99652481fcd320aefa4a7ef90095b95acd181952
 
 PODFILE CHECKSUM: 9b6939e9b71f966c380a780e305f229da5e6a2a5

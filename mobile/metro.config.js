@@ -12,10 +12,13 @@ module.exports = {
       extraNodeModules: {
          react: `${moduleRoot}/node_modules/react`,
          "react-native": `${moduleRoot}/node_modules/react-native`,
+         // "stupendousware-core": `${moduleRoot}/packages/stupendousware-core`,
       },
       blockList: exclusionList([
-         new RegExp(`${packages}/stupendousware-core/node_modules/react/.*`),
-         new RegExp(`${packages}/stupendousware-core/example/.*`),
+         new RegExp(`${packages}/stupendousware-core/.*`),
+         // new RegExp(`${packages}/stupendousware-core/node_modules/react/.*`),
+         // new RegExp(`${packages}/stupendousware-core/example/.*`),
+         // new RegExp(`${packages}/stupendousware-core/example/node_modules/.*`),
       ]),
    },
    transformer: {
