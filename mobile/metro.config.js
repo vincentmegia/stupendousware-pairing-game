@@ -11,7 +11,7 @@ module.exports = {
    resolver: {
       extraNodeModules: {
          react: `${moduleRoot}/node_modules/react`,
-         "react-native": `${moduleRoot}/node_modules/react`,
+         "react-native": `${moduleRoot}/node_modules/react-native`,
       },
       blockList: exclusionList([
          new RegExp(`${packages}/stupendousware-core/node_modules/react/.*`),
