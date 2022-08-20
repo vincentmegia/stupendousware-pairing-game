@@ -1,17 +1,19 @@
 const path = require('path');
 const exclusionList = require('metro-config/src/defaults/exclusionList');
 
-const moduleRoot = path.resolve(__dirname, '..');
-const packages = `${moduleRoot}/packages`;
+const root = path.resolve(__dirname, '..');
+const mobile = `${root}/mobile`;
+const packages = `${root}/packages`;
 
 module.exports = {
-  projectRoot: moduleRoot,
+  projectRoot: root,
+  watchFolders: [root],
   // We need to make sure that only one version is loaded for peerDependencies
   // So we block them at the root, and alias them to the versions in example's node_modules
   resolver: {
     extraNodeModules: {
-      react: `${moduleRoot}/node_modules/react`,
-      'react-native': `${moduleRoot}/node_modules/react-native`,
+      react: `${mobile}/node_modules/react`,
+      'react-native': `${mobile}/node_modules/react-native`,
       // "stupendousware-core": `${moduleRoot}/packages/stupendousware-core`,
     },
     blockList: exclusionList([
