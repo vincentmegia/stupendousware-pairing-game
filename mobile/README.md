@@ -1,1 +1,0 @@
-# stupendousware-pairing-game
