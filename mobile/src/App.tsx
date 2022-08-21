@@ -1,8 +1,8 @@
-import React from 'react';
-import {Splash} from 'stupendousware-core';
+import React from 'react'
+import RootNavigation from './navigation/root-navigation'
 
 const App = () => {
-  return <Splash />;
-};
+  return <RootNavigation />
+}
 
-export default App;
+export default App

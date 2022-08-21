@@ -1,16 +1,23 @@
+/**ya
+ * Keep typescript level recommendations and linting in project level
+ */
 module.exports = {
-  root: true,
-  extends: '@react-native-community',
   parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint'],
-  overrides: [
-    {
-      files: ['*.ts', '*.tsx'],
-      rules: {
-        '@typescript-eslint/no-shadow': ['error'],
-        'no-shadow': 'off',
-        'no-undef': 'off',
-      },
-    },
+  extends: [
+    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
   ],
-};
+  parserOptions: {
+    project: ['./tsconfig.json'],
+    tsconfigRootDir: '.',
+  },
+  ignorePatterns: ['**/*.js'],
+  plugins: ['@typescript-eslint', 'import'],
+  settings: {
+    'import/resolver': {
+      'babel-module': {},
+      typescript: {},
+    },
+    'import/ignore': ['node_modules/react-native/index\\.js$'],
+  },
+}

@@ -1,21 +1,25 @@
-const path = require('path');
+const path = require('path')
+const package = require('../packages/stupendousware-core/package.json')
 
-const root = path.resolve(__dirname, '..');
-const packages = `${root}/packages`;
-const pak = require(`${packages}/package.json`);
-
-console.log('babel.cinfig: ', path.join(__dirname, '..', pak.source));
 module.exports = {
   presets: ['module:metro-react-native-babel-preset'],
   plugins: [
     [
       'module-resolver',
       {
-        extensions: ['.tsx', '.ts', '.js', '.json'],
+        root: ['./src'],
+        extensions: ['.ios.js', '.android.js', '.ts', '.tsx'],
         alias: {
-          [pak.name]: path.join(__dirname, '..', pak.source),
+          [package.name]: path.join(
+            __dirname,
+            '../packages/stupendousware-core',
+            package.source,
+          ),
+          '@screens': './mobile/src/screens',
+          '@components': './mobile//src/components',
+          '@models': './mobile//src/models',
         },
       },
     ],
   ],
-};
+}

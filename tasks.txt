@@ -1,0 +1,3 @@
+1) use yarn workspaces and set all dependencies @root level
+  - reconfigure mobile metro to look @root level
+2) make babel module resolver work using @screens - COMPLETE
