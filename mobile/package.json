@@ -9,6 +9,7 @@
     "test": "jest",
     "lint": "eslint . --ext .js,.ts,.tsx --resolve-plugins-relative-to .",
     "ts:compile": "tsc --noEmit",
+    "precommit": "yarn test && yarn lint && yarn tsc:compile",
     "prepare": "cd .. && husky install mobile/.husky"
   },
   "dependencies": {
