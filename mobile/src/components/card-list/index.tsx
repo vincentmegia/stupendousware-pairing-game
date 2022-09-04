@@ -1,4 +1,4 @@
-import React, {useCallback, useRef, useState} from 'react'
+import React, {memo, useCallback, useRef, useState} from 'react'
 import {View} from 'react-native'
 import {findCard, updateCard} from '@models/index'
 import {CardModel} from '@models/types'
@@ -8,9 +8,14 @@ import styles from './styles'
 interface CardListProps {
   cards: Array<CardModel[]>
   onDisableClicks: () => void
+  onScoreUpdate: () => void
 }
 
-const CardList = ({cards: cardList, onDisableClicks}: CardListProps) => {
+const CardList = ({
+  cards: cardList,
+  onDisableClicks,
+  onScoreUpdate,
+}: CardListProps) => {
   const selectedItemsRef = useRef<CardModel[]>([])
   const [cards, setCards] = useState(cardList)
 
@@ -38,6 +43,7 @@ const CardList = ({cards: cardList, onDisableClicks}: CardListProps) => {
         setCards([...cards])
         selectedItemsRef.current = []
       }, 1000)
+      onScoreUpdate()
       return
     }
 
@@ -68,4 +74,4 @@ const CardList = ({cards: cardList, onDisableClicks}: CardListProps) => {
   )
 }
 
-export default CardList
+export default memo(CardList)

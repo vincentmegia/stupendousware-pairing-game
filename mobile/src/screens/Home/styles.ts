@@ -10,6 +10,11 @@ export default StyleSheet.create({
     marginHorizontal: 16,
     marginTop: 16,
   },
+  restartContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
   button: {
     fontSize: 16,
     color: 'blue',
@@ -19,6 +24,8 @@ export default StyleSheet.create({
   },
   textSmall: {
     fontSize: 12,
+    marginTop: 16,
+    color: 'grey',
   },
   debug: {marginLeft: 'auto', marginRight: 'auto', color: 'grey'},
 })

@@ -8,7 +8,7 @@ interface CardProps {
   card: CardModel
   onSelected: (card: CardModel) => void
 }
-const Card = React.forwardRef((props: CardProps) => {
+const Card = (props: CardProps) => {
   const {card, onSelected} = props
   const flipAnimation = useRef(new Animated.Value(0)).current
   const flipRef = useRef(false)
@@ -97,6 +97,6 @@ const Card = React.forwardRef((props: CardProps) => {
       </Pressable>
     </>
   )
-})
+}
 
 export default memo(Card)

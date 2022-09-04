@@ -1,4 +1,4 @@
-import React, {createRef} from 'react'
+import React, {createRef, useState} from 'react'
 
 import {
   NavigationContainer,
@@ -21,12 +21,13 @@ const RootNavigation = () => {
 
   return (
     <NavigationContainer ref={navigationRef}>
-      <Stack.Navigator initialRouteName="Splash">
+      <Stack.Navigator>
         <Stack.Group screenOptions={{headerShown: false}}>
           <Stack.Screen
             name="Splash"
             children={() => <Splash onComplete={onComplete} />}
           />
+
           <Stack.Screen name="Home" component={Home} />
         </Stack.Group>
       </Stack.Navigator>
