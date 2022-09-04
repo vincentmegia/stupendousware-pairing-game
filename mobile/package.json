@@ -10,7 +10,7 @@
     "lint": "eslint . --ext .js,.ts,.tsx --resolve-plugins-relative-to .",
     "ts:compile": "tsc --noEmit",
     "precommit": "yarn test && yarn lint && yarn tsc:compile",
-    "prepare": "husky install"
+    "prepare": "cd .. && husky install mobile/.husky"
   },
   "dependencies": {
     "@react-navigation/native": "^6.0.11",
