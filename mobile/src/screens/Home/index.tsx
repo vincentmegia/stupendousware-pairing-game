@@ -2,10 +2,10 @@ import React, {useCallback, useRef, useState} from 'react'
 import {Button, Pressable, SafeAreaView, Text, View} from 'react-native'
 import CardList from '@components/card-list'
 import Debug from '@components/debug'
+import Popup from '@components/popup'
 import {CardModel} from '@models/types'
 import {getCards, randomizer} from './extension'
 import styles from './styles'
-import Popup from '@components/popup'
 
 const Home = () => {
   const cardsRef = useRef<Array<CardModel[]>>(getCards(randomizer()))

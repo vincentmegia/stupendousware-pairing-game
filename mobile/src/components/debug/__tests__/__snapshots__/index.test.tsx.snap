@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`home screen tests it matches snapshots 1`] = `
+<Text
+  collapsable={false}
+  style={
+    Object {
+      "color": "grey",
+      "fontSize": 10,
+      "marginTop": 80,
+    }
+  }
+>
+  697
+</Text>
+`;

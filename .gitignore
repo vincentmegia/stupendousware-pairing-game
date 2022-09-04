@@ -5,3 +5,5 @@ yarn-error.log
 **/Pods
 **/.DS_Store
 **/build
+
+**/cache
