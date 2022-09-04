@@ -2,10 +2,14 @@ import React from 'react'
 import {Animated} from 'react-native'
 import styles from './styles'
 
-const Debug = () => {
+interface DebugProps {
+  environment?: 'dev' | 'test'
+}
+
+const Debug = ({environment}: DebugProps) => {
   return (
     <Animated.Text style={styles.text}>
-      {new Date().getMilliseconds()}
+      {!environment ? 0 : new Date().getMilliseconds()}
     </Animated.Text>
   )
 }
