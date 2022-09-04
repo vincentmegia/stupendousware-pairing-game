@@ -11,6 +11,6 @@ exports[`home screen tests it matches snapshots 1`] = `
     }
   }
 >
-  157
+  0
 </Text>
 `;
