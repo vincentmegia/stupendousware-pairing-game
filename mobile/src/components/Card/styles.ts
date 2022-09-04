@@ -3,6 +3,14 @@ export default StyleSheet.create({
   container: {
     justifyContent: 'center',
     alignItems: 'center',
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.09,
+    shadowRadius: 4,
+    elevation: 5,
   },
   cardFront: {
     justifyContent: 'center',

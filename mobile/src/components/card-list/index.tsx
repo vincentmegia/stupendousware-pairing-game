@@ -8,7 +8,7 @@ import styles from './styles'
 interface CardListProps {
   cards: Array<CardModel[]>
   onDisableClicks: () => void
-  onScoreUpdate: () => void
+  onScoreUpdate: (completed: boolean) => void
 }
 
 const CardList = ({
@@ -18,6 +18,7 @@ const CardList = ({
 }: CardListProps) => {
   const selectedItemsRef = useRef<CardModel[]>([])
   const [cards, setCards] = useState(cardList)
+  const completedRef = useRef(0)
 
   const onSelected = useCallback((card: CardModel) => {
     if (!selectedItemsRef.current) return
@@ -41,16 +42,20 @@ const CardList = ({
         updateCard(cards, previousCard)
         updateCard(cards, currentCard)
         setCards([...cards])
+
         selectedItemsRef.current = []
       }, 1000)
-      onScoreUpdate()
+      onScoreUpdate(false)
       return
     }
 
     // matched
     currentCard.matched = true
     previousCard.matched = true
+    completedRef.current = completedRef.current + 2
     selectedItemsRef.current = []
+    console.log('completedRef count: ', completedRef.current)
+    onScoreUpdate(completedRef.current === 12)
   }, [])
 
   return (
