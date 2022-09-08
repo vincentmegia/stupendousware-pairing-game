@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card component tests it matches snapshot 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "elevation": 5,
+      "justifyContent": "center",
+      "shadowColor": "#000",
+      "shadowOffset": Object {
+        "height": 2,
+        "width": 0,
+      },
+      "shadowOpacity": 0.09,
+      "shadowRadius": 4,
+    }
+  }
+>
+  <View
+    collapsable={false}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "white",
+        "borderRadius": 20,
+        "justifyContent": "center",
+        "maxHeight": 140,
+        "maxWidth": 110,
+        "minHeight": 130,
+        "minWidth": 100,
+        "position": "absolute",
+        "transform": Array [
+          Object {
+            "rotateY": "180deg",
+          },
+        ],
+      }
+    }
+  >
+    <Text
+      collapsable={false}
+      style={
+        Object {
+          "backfaceVisibility": "hidden",
+          "fontWeight": "900",
+          "position": "absolute",
+          "transform": Array [
+            Object {
+              "rotateY": "180deg",
+            },
+          ],
+        }
+      }
+    />
+    <Text
+      collapsable={false}
+      style={
+        Object {
+          "color": "grey",
+          "fontSize": 10,
+          "marginTop": 80,
+        }
+      }
+    >
+      0
+    </Text>
+  </View>
+  <View
+    collapsable={false}
+    style={
+      Object {
+        "alignItems": "center",
+        "backfaceVisibility": "hidden",
+        "backgroundColor": "white",
+        "borderRadius": 20,
+        "justifyContent": "center",
+        "maxHeight": 140,
+        "maxWidth": 110,
+        "minHeight": 130,
+        "minWidth": 100,
+        "position": "absolute",
+        "transform": Array [
+          Object {
+            "rotateY": "0deg",
+          },
+        ],
+      }
+    }
+  >
+    <Text
+      collapsable={false}
+      style={
+        Object {
+          "backfaceVisibility": "hidden",
+          "backgroundColor": "white",
+          "color": "white",
+          "display": "none",
+          "transform": Array [
+            Object {
+              "rotateY": "0deg",
+            },
+          ],
+        }
+      }
+    />
+    <Text
+      collapsable={false}
+      style={
+        Object {
+          "color": "grey",
+          "fontSize": 10,
+          "marginTop": 80,
+        }
+      }
+    >
+      0
+    </Text>
+  </View>
+</View>
+`;

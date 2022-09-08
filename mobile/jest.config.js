@@ -10,10 +10,11 @@ module.exports = {
     '^.+\\.tsx?$': 'ts-jest',
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
-  cacheDirectory: '.jest/cache',
+  cacheDirectory: 'jest/.jest/cache',
   moduleNameMapper: {
     '^@components(.*)$': '<rootDir>/src/components$1',
     '^@models(.*)$': '<rootDir>/src/models$1',
     '^@screens(.*)$': '<rootDir>/src/screens$1',
   },
+  collectCoverage: true,
 }

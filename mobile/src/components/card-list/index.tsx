@@ -3,7 +3,7 @@ import {View} from 'react-native'
 import {findCard, updateCard} from '@models/index'
 import {CardModel} from '@models/types'
 import Card from '../card'
-import styles from './styles'
+import styles from './styles' 
 
 interface CardListProps {
   cards: Array<CardModel[]>
@@ -54,7 +54,6 @@ const CardList = ({
     previousCard.matched = true
     completedRef.current = completedRef.current + 2
     selectedItemsRef.current = []
-    console.log('completedRef count: ', completedRef.current)
     onScoreUpdate(completedRef.current === 12)
   }, [])
 
