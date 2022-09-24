@@ -11,7 +11,7 @@ module.exports = {
     project: ['./tsconfig.json'],
     tsconfigRootDir: '.',
   },
-  ignorePatterns: ['**/*.js'],
+  ignorePatterns: ['**/*.js', '**/__tests__/*', '**/src/assets/*'],
   plugins: ['@typescript-eslint', 'import'],
   settings: {
     'import/resolver': {

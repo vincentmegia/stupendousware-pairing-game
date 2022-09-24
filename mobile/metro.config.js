@@ -10,7 +10,7 @@ const modules = Object.keys({
 })
 
 module.exports = {
-  server: {port: 8088},
+  // server: {port: 8081},
   projectRoot: path.join(__dirname, '..'),
   watchFolders: [packages, `${packages}/stupendousware-core`],
   // We need to make sure that only one version is loaded for peerDependencies

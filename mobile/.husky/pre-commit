@@ -3,5 +3,5 @@
 
 cd mobile
 yarn test
-yarn ts:compile
+yarn compile
 yarn lint
