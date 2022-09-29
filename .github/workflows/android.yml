@@ -20,11 +20,12 @@ jobs:
         distribution: 'temurin'
         cache: gradle
 
+    - name: echo tester
+      run: echo ---------- ${pwd} -------
     - name: Grant execute permission for gradlew
       run: cd mobile/android && chmod +x gradlew
     - name: Build with Gradle
-      run: ./gradlew assembleRelease
-      
+      run: ./gradlew assembleRelease 
     - name: Upload Android Release to Play Store
       uses: r0adkll/upload-google-play@v1.0.18
 
