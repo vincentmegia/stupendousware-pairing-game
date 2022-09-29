@@ -19,7 +19,9 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: gradle
-
+    - name: Yarn install
+      run: yarn
+      working-directory: ./mobile
     - name: Grant execute permission for gradlew
       run: chmod +x mobile/android/gradlew
     - name: Build with Gradle
