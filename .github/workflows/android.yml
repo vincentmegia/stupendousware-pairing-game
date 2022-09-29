@@ -23,7 +23,7 @@ jobs:
     - name: goto mobile android directory
       run: cd mobile/android
     - name: echo tester
-      run: ----------- ${PWD} --------------
+      run: echo ----------- ${PWD} --------------
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build with Gradle
