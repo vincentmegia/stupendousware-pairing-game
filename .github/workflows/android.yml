@@ -21,7 +21,7 @@ jobs:
         cache: gradle
 
     - name: echo tester
-      run: echo ---------- ${pwd} -------
+      run: echo ---------- ${PWD} -------
     - name: Grant execute permission for gradlew
       run: cd mobile/android && chmod +x gradlew
     - name: Build with Gradle
