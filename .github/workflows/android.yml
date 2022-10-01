@@ -29,6 +29,9 @@ jobs:
     - name: Yarn mobile
       run: yarn
       working-directory: ./mobile
+    - name: delete other package.json
+      run: rm -rf package.json
+      working-directory: ./packages/stupendous-core
     - name: Grant execute permission for gradlew
       run: chmod +x mobile/android/gradlew
     - name: Build with Gradle
