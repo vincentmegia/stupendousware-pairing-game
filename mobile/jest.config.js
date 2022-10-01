@@ -16,5 +16,6 @@ module.exports = {
     '^@models(.*)$': '<rootDir>/src/models$1',
     '^@screens(.*)$': '<rootDir>/src/screens$1',
   },
+  modulePathIgnorePatterns: ['<rootDir>/build'],
   collectCoverage: true,
 }
