@@ -28,7 +28,6 @@ jobs:
       working-directory: packages/stupendousware-core
     - name: Yarn mobile
       run: yarn
-      working-directory: mobile
       working-directory: packages/stupendousware-core
     - name: Grant execute permission for gradlew
       run: chmod +x mobile/android/gradlew
