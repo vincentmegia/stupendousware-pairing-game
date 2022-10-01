@@ -19,6 +19,10 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: gradle
+    - name: clone submodule
+      run: git clone https://github.com/vincentmegia/stupendousware-core
+    - name: initialize submodule
+      run:  git submodule update --init
     - name: Yarn install packages
       run: yarn
       working-directory: ./packages/stupendousware-core
