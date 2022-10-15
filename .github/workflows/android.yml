@@ -29,6 +29,9 @@ jobs:
     - name: Yarn mobile
       run: yarn
       working-directory: mobile
+    - name: Delete example
+      run: rm -rf example
+      working-directory: mobile
     - name: Grant execute permission for gradlew
       run: chmod +x mobile/android/gradlew
     - name: Build with Gradle
